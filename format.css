@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial, helvetica, sans-serif;
+    background-color:rgb(212, 158, 158); /* background color*/
+    
+}
+.contact_form {
+    height: 80vh;
+    width: 100%;
+    border: 1px solid #fff1;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 17px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 17px 20px;
+}
