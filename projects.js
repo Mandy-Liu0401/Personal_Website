@@ -29,7 +29,7 @@ const projectArray = [
         "description": "Description: Designed a joke gererator that generates a random joke from a list of jokes. ",
         "technologie":"HTML, CSS, JavaScript",
         "date":"Date: Oct 20, 2023",
-        "url":"123",
+        "url":"https://github.com/Mandy-Liu0401/joke-generator.git",
         "image":"images/project4.jpg"
     },
     
@@ -53,7 +53,6 @@ function showProject(step) {
     /*once project number is choosen, index number = project number-1
     *pass all property contents from array to each access point in html by its id
     */
-
     const project = projectArray[currentProject-1];
     document.getElementById('project_title').textContent = project.title;
     document.getElementById('description').textContent = project.description;
@@ -64,7 +63,6 @@ function showProject(step) {
 
     let progress = (currentProject / totalProject) * 100;//progress calculation
     document.getElementById("slider-progress").style.width = progress + "%";//dynamically update the progress bar
-
 }
 
 showProject(0);//initialize with index 0

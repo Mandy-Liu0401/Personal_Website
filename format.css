@@ -5,9 +5,6 @@ body,html {
     padding: 0 ;
 }
 
-/* can you help me to set the websit height to fit the brower? */
-
-
 body{
     
     background-color:rgb(9, 10, 9); 
@@ -64,7 +61,6 @@ nav{
     font-size:x-large
 }
 
-
 a {
     text-decoration: none;
     cursor: pointer;
@@ -90,7 +86,6 @@ a:hover ,h2{
     z-index: -1; /* Move the background image behind other elements */
 }
 
-
 .index_detail{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.7em;
@@ -99,6 +94,8 @@ a:hover ,h2{
     padding:50px 0 0 50px;
 }
 
+
+/* two animations for typing and cursor effects*/
 @keyframes typing {
     from { width: 0 }
     to {width:9em}
@@ -176,8 +173,6 @@ a:hover ,h2{
     align-items: center;
     
     }
-
-
 
 .resume_container{
     width:90%;
@@ -310,7 +305,6 @@ a:hover ,h2{
     border-radius: 25px;
 }
 
-
 .project_btn{
     display: flex;
     flex-direction: row;
@@ -343,7 +337,6 @@ a:hover ,h2{
 
 #name:hover, #email:hover, #message:hover{
     background-color: #20c99623;
-
 }
 
 .btn{
@@ -368,6 +361,7 @@ footer{
     background-color: transparent;
 }
 
+/* blink work effect*/
 @keyframes blink {
     0% {opacity: 0.5;}
     50% {opacity: 1;}
@@ -375,8 +369,8 @@ footer{
     color: #20c997;}
 }
 
+/* responsive to smaller screen*/
 @media (max-width: 800px) {
-
     .nav_container,
     .project_container,
     .contact_object,
