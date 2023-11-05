@@ -1,4 +1,4 @@
-const projectArray = [
+const projectArray = [//array holds a total of 4 projects
     {
         title: "Electronic Health Records System",
         description: "Description: Developed a health records system for health providers with a built-in Body Mass Index (BMI) calculation function.",
@@ -25,19 +25,17 @@ const projectArray = [
         image:"images/project3.jpg"
     },
     {
-        "title": "Joke of the day",
-        "description": "Description: Designed a joke gererator that generates a random joke from a list of jokes. ",
-        "technologie":"HTML, CSS, JavaScript",
-        "date":"Date: Oct 20, 2023",
-        "url":"https://github.com/Mandy-Liu0401/joke-generator.git",
-        "image":"images/project4.jpg"
+        title: "Joke of the day",
+        description: "Description: Designed a joke gererator that generates a random joke from a list of jokes. ",
+        technologie:"HTML, CSS, JavaScript",
+        date:"Date: Oct 20, 2023",
+        url:"https://github.com/Mandy-Liu0401/joke-generator.git",
+        image:"images/project4.jpg"
     },
     
 ];
 
-
-
-
+//declaration for first project and the last project
 let currentProject = 1;
 let totalProject = projectArray.length;
 
@@ -50,8 +48,9 @@ function showProject(step) {
         currentProject = 1;//once reach 4, reset to 1
     }
 
-    /*once project number is choosen, index number = project number-1
-    *pass all property contents from array to each access point in html by its id
+    /*
+    once project number is choosen, index number = project number-1
+    pass all property contents from array to each access point in html by its id
     */
     const project = projectArray[currentProject-1];
     document.getElementById('project_title').textContent = project.title;
@@ -62,7 +61,9 @@ function showProject(step) {
     document.getElementById("project_link").href = project.url;
 
     let progress = (currentProject / totalProject) * 100;//progress calculation
-    document.getElementById("slider-progress").style.width = progress + "%";//dynamically update the progress bar
+    
+    //dynamically update the progress bar
+    document.getElementById("slider-progress").style.width = progress + "%";
 }
 
 showProject(0);//initialize with index 0

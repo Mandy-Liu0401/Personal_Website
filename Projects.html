@@ -32,23 +32,27 @@ description:Contact.html file for Assigbment 1-->
         </div>
     </header>
 
-    <div class = "project_container">
-        <div class="project_detail">
-            <p id="project_title"></p>
-            <p id="description"></p>
-            <p id ="technologie"></p>
-            <p id="date" ></p>
-            <a id="project_link" target="_blank" href="#">GitHub</a>
-        </div>
-        <div>
-            <img id="project_image" src="#" alt="project images" >
-        </div>
+    <div class="page_container">
+        <div class = "project_container">
+            <div class="project_detail">
+                <p id="project_title"></p>
+                <p id="description"></p>
+                <p id ="technologie"></p>
+                <p id="date" ></p>
+                <a id="project_link" target="_blank" href="#">GitHub</a>
+            </div>
+            <div>
+                <img id="project_image" src="#" alt="project images" >
+            </div>
 
-        <div id="slider-container">
-            <div id="slider-progress"></div>
+            <!-- a progess bar-->
+            <div id="slider-container">
+                <div id="slider-progress"></div>
+            </div>
         </div>
     </div>
 
+    <!-- 2 buttons to navi previous and forward-->
     <div class="project_btn">
         <button class = "btn" id="prevBtn" onclick="showProject(-1)">Previous</button>
         <button class = "btn" id="nextBtn" onclick="showProject(+1)">Next</button>
