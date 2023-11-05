@@ -1,15 +1,27 @@
-* {
-    margin: 0;
-    padding: 0;
+body,html {
+    height: 100vh ;
+    width: 100vw;
+    margin: 0 ;
+    padding: 0 ;
+}
+
+/* can you help me to set the websit height to fit the brower? */
+
+
+body{
+    
+    background-color:rgb(9, 10, 9); 
+    color:white;
     font-family: Arial,  helvetica, sans-serif;
-    background-color:rgb(9, 10, 9); /* background color*/
+    opacity: 1;
+}
+::selection {
+    color: white; 
+    background-color: #20c99698; 
     
 }
 
-
-
 header{
-    padding-top: 5em;
     text-align: center;
     font-size: 30px;
     color:#20c997;
@@ -27,18 +39,15 @@ header{
 nav{
     position: relative;
     width: 100%;
-    top: 25px;;
     right: 25px;
     background-color: transparent;
 }
 
-#name{
-    font-family:Brush Script, Lucida Handwriting, Pacifico;
+#logo{
+    font-family:'Brush Script', 'Lucida Handwriting', Pacifico;
     color: #20c997;
-    font-size: 350%;;
-    position: absolute;
-    left: 80px;
-    cursor: pointer;
+    font-size: 350%;
+    margin-right: auto;
     list-style: none;
 }
 
@@ -46,13 +55,12 @@ nav{
     display:flex;
     flex-direction: row;
     justify-content:flex-end;
-    align-content: center;
+    align-items: center;
 }
 
 .nav_item{
-    padding-left: 30px;
+    padding-left: 40px;
     list-style: none;
-    color: white;
     font-size:x-large
 }
 
@@ -61,59 +69,339 @@ a {
     text-decoration: none;
     cursor: pointer;
     color: white;
-    font-family:  Helvetica, sans-serif;
+    font-family:  Arial,Helvetica, sans-serif;
     }
 
-a:hover {
+a:hover ,h2{
     color: #20c997;
+    margin-bottom: 0;
+}
 
+#image_background{
+    background-image: url('images/photo1.jpg');
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    opacity: 0.5;
+    z-index: -1; /* Move the background image behind other elements */
 }
 
 
-.contact_form{
-    color: white;
-    padding: 3em;
+.index_detail{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7em;
+    font-size: 1.5em;
+    height: 70vh;
+    padding:50px 0 0 50px;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to {width:9em}
+}
+
+@keyframes cursor {
+    50% { border-right-color: transparent }
+}
+
+.index_title{
+    font-size: 200%;
+    margin-bottom: 30px;
+}
+.typewriter {
+    word-break: break-all;
+    margin:0 0 50px 0;
+    line-height: 120%;
+    font-size: 200%;
+    border-right: 3px solid white ;
+    overflow: hidden; 
+    white-space: nowrap; 
+    animation: 
+        typing 3s steps(17, end) forwards,
+        cursor 0.5s steps(1) infinite;
+}
+
+.emphasis{
+    color: #20c997;
+    font-weight: 600;
+}
+
+#college_link {
+    animation: blink 3s infinite;
+    text-decoration: underline;
+}
+
+.contact_container ul{
+    list-style: none;
+}
+
+.contact_object{
+    width:95vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.contact_container{
+    max-width: 350px;
+    padding: 6px 30px ;
+    font-size: 110%;
+    line-height: 1.5em;
+}
+
+.contact_info{
+    border-bottom:1px solid rgb(26, 31, 29);
+    padding:10px 0;
+}
+
+.object_container{
+    text-align: justify;
+    width:50%;
+    line-height: 2em;
+    font-size: 120%;
+    padding: 6px 30px ;
+}
+
+.contact_object_container{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    
+    }
+
+
+
+.resume_container{
+    width:90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 100px ;
+}
+
+.resume_section{
+    font-size: 200%;
+    font-weight: 600;
+    text-align: center;
+    margin:10px 0;
+}
+
+.resume_experience{
+    background-color: rgb(26, 31, 29);
+    border-radius: 5px;
+    width: 430px;
+    height: 180px;
+    margin: 20px 60px;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: left;
+}
+.resume_date{
+    width: fit-content;
+    list-style: none;
+    background-color:transparent;
+    border: 1px solid #20c997;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.resume_title{
+    font-family: Georgia, Arial ;
+    list-style: none;
+    font-size: 150%;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+.resume_employer{
+    list-style: none;
+    color: #20c997;
+    font-size: 120%;
+}
+
+.skill_container{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+}
+
+.skill_detail ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.skill_detail li{
+    width: 50%;
+    font-size: 130%;
+    line-height: 2em;
+    text-align: left;
+    padding:10px 0;
+}
+
+.skill_detail{
+    width: 70%;
+}
+
+.project_container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 30px;
+    padding: 20px 30px ;
+    border: 2px solid #20c997;
+    border-radius: 15px;
+}
+
+.project_detail{
+    display: block;
+    flex-direction: column;
+    justify-content:left;
+    line-height: 1.5em;
+    padding: 0 3em;
+    font-size: 120%;
+    max-width: 50%;
+}
+
+#project_title{
+    font-size: 150%;
+    font-weight: 600;
+    width: fit-content;
+    font-family: Poppins, sans-serif;
+    margin-bottom: 15px;
+    animation: blink 3s infinite;
+}
+
+#project_image{
+    float: right;
+    height: 50vh;
+    max-width: 50vw;
+}
+
+#slider-container {
+    width: 33%;
+    height: 10px;
+    background-color: #dddddd66;
+    position: absolute;
+    bottom: 0;
+    border-radius: 25px;
+}
+
+#slider-progress {
+    height: 10px;
+    width: 0%;
+    background-color: #4CAF50;
+    border-radius: 25px;
 }
 
 
-.input{
+.project_btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_container p{
+    font-size: 150%;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+#name, #email, #message{
+    margin-top: 25px;
+    padding: 10px 10px;
+    width: 35em;
+    font-family: Arial,  helvetica, sans-serif;
+    background-color: transparent;
     border-bottom: 2px solid #20c997;
-    margin: 1em;
-    padding-top: 5px;
-    width: 66%;
     font-size: medium;
+}
+
+#name:hover, #email:hover, #message:hover{
+    background-color: #20c99623;
+
 }
 
 .btn{
     background-color:#20c997;
-    border-color: #20c997;
     color: white;
-    margin: 2em;
+    margin: 1em;
     line-height:3em;
     font-weight: 600;
     cursor: pointer;
     letter-spacing: 1px;
     border-radius: 25px;
-    width:25em;
+    width:15em;
+}
+
+.btn:hover{
+    background-color: #39c89d32;
+    border-color: #20c997;
 }
 
 footer{
-    position: relative;
-    bottom: 0;
-    color:white;
-    padding: 30px;
-    background-color: transparent
+    padding:0  0 10px 20px;
+    background-color: transparent;
 }
 
-@media (max-width: 500px) {
-    body, .nav_container {
+@keyframes blink {
+    0% {opacity: 0.5;}
+    50% {opacity: 1;}
+    100% {opacity: 0.5;
+    color: #20c997;}
+}
+
+@media (max-width: 800px) {
+
+    .nav_container,
+    .project_container,
+    .contact_object,
+    .resume_container
+    {
         display: flex;
         flex-direction: column;
-        justify-content: stretch;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skill_detail li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    #image_background{
+    background-size: contain;
+    background-position: top;
+    width: 100%;
+    opacity: 0.3;
+    }
+
+    #name, #email, #message{
+        width:50vw
     }
 }

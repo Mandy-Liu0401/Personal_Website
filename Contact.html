@@ -9,44 +9,57 @@ description:Contact.html file for Assigbment 1-->
     <meta charset="UTF-8">
     <meta name="author" content="Mengying Liu">
     <meta name="description" content="Contact.html file for Assigbment 1">
-    <meta name="keywords" content="resume">
+    <meta name="keywords" content="contact_form">
     <link rel="stylesheet" type="text/css" href="format.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="projects.js" defer></script>
 </head>
 
-<nav>
-    <ul class ="nav_container">
-        <li id="name">M.L.</li>
-        <li class = "nav_item"><a href="Index.html">About me</a></li>
-        <li class = "nav_item"><a href="Resume.html">Resume</a></li>
-        <li class = "nav_item"><a href="Projects.html">Projects</a></li>
-        <li class = "nav_item"><a href="Contact.html">Contact</a></li>
-    </ul>
-</nav>
-
 <body>
+    <nav >
+        <ul class ="nav_container">
+            <li id="logo">M.L.</li>
+            <li class = "nav_item"><a href="Index.html">About me</a></li>
+            <li class = "nav_item"><a href="Resume.html">Resume</a></li>
+            <li class = "nav_item"><a href="Projects.html">Projects</a></li>
+            <li class = "nav_item"><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
     <header>
         <div class = "divider">
-            <h1>Get in Touch</h1>
+            <h2>Get in Touch</h2>
         </div>
     </header>
 
 
 
-    <form action="contat.php" method="post">
-        <div class = "contact_form">
-            <h2>Feel free to contact me anytime</h2>
-            
-            <input class="input" type="text" placeholder="Your Name Here">
-            <input class="input" type="email" placeholder="Email">
-            <textarea class="input" rows="15" placeholder="Your Message Here" spellcheck="false"></textarea>
-            <button class="btn" type="submit">SUBMITT</button>
+<form action="contat.php" method="post">
+    <div class = "form_container">
+        <p id="contact_greeting">Feel free to contact me anytime.</p>
+        <div>
+            <label for="name"><i class="fa fa-user fa-fw" ></i></label>
+            <input class="input" id="name" type="text" placeholder="Name">
         </div>
-    </form>
+
+        <div>
+            <label for="email"><i class="fa fa-envelope-o fa-fw"></i></label>
+            <input class="input" id="email" type="email" placeholder="Email">
+        </div>
+        
+        <div >
+            <label for="message"><i class="fa fa-comments prefix"></i></label>
+            <textarea id="message" rows="8" placeholder="Message" spellcheck="false"></textarea>
+        </div>
+
+        <button class="btn" type="submit">SUBMITT</button>
+    </div>
+</form>
 
 
     <footer>
-        <p>Copyright &copy
+        <p>Copyright &copy;
             <a href="#home">Mengying Liu</a>
             . All Rights Reserved.
         </p>

@@ -14,56 +14,53 @@ description:Contact.html file for Assigbment 1-->
     <script src="projects.js" defer></script>
 </head>
 
-<nav>
-    <ul class ="nav_container">
-        <li id="name">M.L.</li>
-        <li class = "nav_item"><a href="Index.html">About me</a></li>
-        <li class = "nav_item"><a href="Resume.html">Resume</a></li>
-        <li class = "nav_item"><a href="Projects.html">Projects</a></li>
-        <li class = "nav_item"><a href="Contact.html">Contact</a></li>
-    </ul>
-</nav>
-
 <body>
+    <nav>
+        <ul class ="nav_container">
+            <li id="logo">M.L.</li>
+            <li class = "nav_item"><a href="Index.html">About me</a></li>
+            <li class = "nav_item"><a href="Resume.html">Resume</a></li>
+            <li class = "nav_item"><a href="Projects.html">Projects</a></li>
+            <li class = "nav_item"><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
     <header>
         <div class = "divider">
-            <h1>My Projects</h1>
+            <h2>My Projects</h2>
         </div>
     </header>
 
-
-<div>
     <div class = "project_container">
-        <div class="project_title">
-            <h2>Electronic Health Records System</h2>
+        <div class="project_detail">
+            <p id="project_title"></p>
+            <p id="description"></p>
+            <p id ="technologie"></p>
+            <p id="date" ></p>
+            <a id="project_link" href="#">GitHub</a>
         </div>
-        <div class ="project_descrition">
-            <p>Technologies:Java</p>
-            <p>Date:Oct 15, 2023</p>
-            <a herf="https://github.com/Mandy-Liu0401/Electronic_Health_Record_System.git">GitHub</a>
+        <div>
+            <img id="project_image" src="#" alt="project images" >
+        </div>
+        
+        <div id="slider-container">
+            <div id="slider-progress"></div>
         </div>
     </div>
 
-    <div class = "project_container">
-
+    <div class="project_btn">
+        <button class = "btn" id="prevBtn" onclick="showProject(-1)">Previous</button>
+        <button class = "btn" id="nextBtn" onclick="showProject(+1)">Next</button>
     </div>
-
-    <div class = "project_container">
-
-    </div>
-    
-    <div class = "project_container">
-
-    </div>
-</div>
-
 
     <footer>
-        <p>Copyright &copy
+        <p>Copyright &copy;
             <a href="#home">Mengying Liu</a>
             . All Rights Reserved.
         </p>
     </footer>
+
 </body>
 
 </html>
